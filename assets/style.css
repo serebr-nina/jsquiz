@@ -1,0 +1,81 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+header a, header p {
+    margin: 15px;
+    font-size: 18px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+.quiz {
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+}
+
+.btn {
+    background-color: #583ba7;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.scores-page {
+    padding: 15px;
+}
+
+.scores-page ul {
+    padding-left: 0;
+}
+
+.scores-page ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+#temporary {
+    font-style: italic;
+    font-weight: lighter;
+    border-top: gray solid;
+}
+
+#initials-input {
+    padding: 8px;
+    border-radius: 10px;
+    border: solid #583ba7;
+    margin-right: 15px;
+    font-size: 16px;
+    font-family: Verdana;
+}
