@@ -23,7 +23,7 @@ The building process involved several steps:
 In the process of working on this project I learned a new way of using Javascript, HTML files, and CSS.
 
 ## Website
-[Javascript quiz]
+[Javascript quiz] https://serebr-nina.github.io/jsquiz
 
 
 

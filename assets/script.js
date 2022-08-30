@@ -86,13 +86,10 @@ var answerButton3 = document.getElementById("answer-3");
 answerButton3.addEventListener("click", answer);
 
 function answer(event) {
-    //console.log('Here: ' + event.currentTarget.textContent);
     if (questions[questionCounter].answer === event.currentTarget.textContent) {
-        //console.log('Correct');
         answerStatus("Correct!");
         answersCorrect++;
     } else {
-        //console.log('Incorrect');
         answerStatus("Incorrect!");
         countdown -= 10;
         timerText.textContent = "Timer: " + countdown;
@@ -102,7 +99,6 @@ function answer(event) {
 }
 
 function startQuiz() {
-    //console.log('Here');
     document.querySelector(".main").hidden = true;
     document.querySelector(".quiz").hidden = false;
     startCountdown();
@@ -131,7 +127,6 @@ function startCountdown () {
         if (countdown >= 1) {
             timerText.textContent = "Timer: " + countdown;
             countdown--;
-            //console.log('countdown ' + countdown);
         }
         else {
             timerText.textContent = "Timer: 0"
@@ -161,7 +156,6 @@ function Done () {
     var scoreTotalEl = document.createElement("h2");
     scoreTotalEl.textContent = "Your final score is " + countdown + ".";
     document.querySelector(".question").appendChild(scoreTotalEl);
-    console.log('Done ' + countdown);
 
     var doneDivEl = document.createElement("div");
     doneDivEl.innerHTML = "<h2>Enter Initials:</h2><form class='initials-form'><input type=text id='initials-input' /><button class='btn' id='initials-btn' type='submit'>Submit</button></form>";
@@ -185,11 +179,10 @@ function scoreSubmit (event) {
      }
      else {
         // See if one already exists for initials and only replace if higher score
-        console.log('submit ' + countdown);
         if (highScoresMap[initials] == null) {
             highScoresMap[initials] =  countdown;
         } else if (highScoresMap[initials] < countdown) {
-            // replace it
+            // replace it with higher score
             highScoresMap[initials] = countdown;
         }
         saveHighScores();
